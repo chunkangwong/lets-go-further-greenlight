@@ -21,6 +21,17 @@ Greenlight Team
       on board!
     </p>
     <p>For future reference, your user ID number is {{.ID}}.</p>
+    <p>
+      Please send a request to the <code>PUT /v1/users/activated</code> endpoint
+      with the following JSON body to activate your account:
+    </p>
+    <pre><code>
+      {"token": "{{.activateToken}}"}
+    </code></pre>
+    <p>
+      Please note that this is a one-time user token and it will expire in 3
+      days.
+    </p>
     <p>Thanks,</p>
     <p>The Greenlight Team</p>
   </body>
