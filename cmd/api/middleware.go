@@ -155,7 +155,6 @@ func (app *application) requirePermission(code string, next http.HandlerFunc) ht
 			return
 		}
 
-		fmt.Println(permissions)
 		if !permissions.Include(code) {
 			app.notPermittedResponse(w, r)
 			return
